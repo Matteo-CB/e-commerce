@@ -1,0 +1,106 @@
+@import './settings';
+
+.product{
+    width: 100%;
+    position: relative;
+    img{
+        width: 100%;
+        @media screen and (min-width: 1000px) {
+            &{
+                padding: 20px;
+                border-radius: 30px;
+                width: 550px;
+                position: absolute;
+                top: 50%;
+                transform: translate(-50%, -50%);
+                left: 50%;
+            }
+        }
+    }
+    .next{
+        width: 15px;
+        position: absolute;
+        z-index: 45;
+        
+    }
+    div{
+        width: 50px;
+        position: absolute;
+        height: 50px;
+        border-radius: 50%;
+        background: $white;
+        z-index: 56;
+        top: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        transform: translateX(-50%);
+    }
+    .l{
+        left: 8%;
+        @media screen and (min-width: 1000px) {
+            &{
+                display: none;
+            }
+        }
+    }
+    .r{
+        left: 92%;
+        @media screen and (min-width: 1000px) {
+            &{
+                display: none;
+            }
+        }
+    }
+    .previous{
+        width: 15px;
+        
+        
+
+
+    }
+    aside{
+        width: 200px;
+    }
+}
+.product-img{
+    margin: -50px auto;
+    transform: translate(69px, 400px);
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    grid-template-columns: 25% 25% 25% 25%;
+    
+    box-sizing: border-box;
+    width: 550px;
+    @media screen and (max-width: 1000px) {
+        &{
+                
+        display: none;
+                
+        }
+        }
+article{
+    margin-left: -20px;
+    padding: 20px;
+}
+    
+    img{
+        border-radius: 10px;
+        
+        padding: 0;
+        
+        position: static;
+        width: 85%;
+       
+        box-sizing: border-box;
+    }
+    .active{
+        img{
+
+            opacity: 0.5;
+           border: 1px $orange solid;
+        }
+    }
+}
+  

@@ -1,0 +1,60 @@
+@import './settings';
+
+.addToCart{
+    @media screen and (min-width: 1000px) {
+        &{
+            width: 80%;
+            display: grid;
+            grid-template-columns: 30% 70%;
+            margin-top: 100px;
+        }
+    }
+    .plusOrMinus{
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        padding: 20px;
+        width: 90%;
+        @media screen and (min-width: 1000px) {
+            &{
+                width: 90%;
+                margin: 10px 10px 10px 20px;
+                
+            }
+        }
+        margin: 10px auto;
+        background: $grey2;
+        border-radius: 10px;
+    }
+    button{
+        transition: 0.5s;
+        &:hover{
+            background: $paleOrange2;
+            box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
+            cursor: pointer;
+        }
+        white-space: nowrap;
+        color:$white;
+        padding: 20px;
+        width: 90%;
+        border: none;
+        display: flex;
+        align-items: center;
+        text-align: center;
+        background: $orange;
+        border-radius: 10px;
+        margin: 10px auto;
+        span{
+            img{
+                margin-right: 10px;
+                min-width: 20px;
+            }
+            margin-left: 50%;
+            transform: translateX(-50%);
+            font-weight: 600;
+        }
+    }
+    .cart-btn{
+        width: 20px;
+    }
+}

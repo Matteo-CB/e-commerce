@@ -1,0 +1,48 @@
+$white: hsl(0, 0%, 100%);
+$grey: hsla(0, 0%, 0%, 0.45);
+$orange: hsl(26, 100%, 55%);
+$paleOrange: hsl(25, 100%, 94%);
+$paleOrange2: hsl(25, 78%, 70%);
+$grey2: hsl(240, 9%, 94%);
+$grey3: hsl(0, 0%, 35%);
+
+@font-face {
+    font-family: KumbhSans;
+    src: url("../font/KumbhSans-VariableFont_YOPQ\,wght.ttf");
+}
+
+$font: KumbhSans;
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style-type: none;
+    
+
+}
+body{
+    font-family: $font;
+    @media screen and (min-width: 1000px) {
+        &{
+            overflow: hidden !important;
+        }
+    }
+   
+}
+.desktop{
+    @media screen and (min-width: 1000px) {
+        &{
+            align-items: center;
+            display: flex;
+            height: 100vh;
+        }
+    }
+}
+a{
+    text-decoration: none;
+    color: inherit;
+}
+
+.legal{
+    padding-top: 100px;
+}
