@@ -7,7 +7,7 @@ const Footer = () => {
       <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">
         Frontend Mentor
       </a>
-      . Coded by <a href="https://www.instagram.com/livai.byk/">Matteo CB</a>.
+      . Coded by <a href="#">Matteo CB</a>.
     </footer>
   );
 };
